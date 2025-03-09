@@ -29,7 +29,7 @@ const Sidebar = () => {
           {isopen && (
             
                <Box className='image'>
-              <Image src="sanjanaPhoto.jpg" />
+              <Image src="images/sanjanaPhoto.jpg" />
             </Box>
 
             

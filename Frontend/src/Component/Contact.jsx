@@ -79,7 +79,7 @@ import {
   
           <HStack spacing={10} align="center" justify="center" flexWrap={{ base: "wrap", md: "nowrap" }}>
             <Image 
-              src="/contact-us.jpg" 
+              src="images/contact-us.jpg" 
               alt="Contact Me" 
               boxSize={{ base: "250px", md: "370px" }}
               paddingTop={'20px'}

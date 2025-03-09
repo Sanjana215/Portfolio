@@ -47,7 +47,7 @@ const Projects = () => {
               }}
             >
               <Image
-                src={project.image}
+                src={`images/${project.image}`}
                 w="100%"
                 h="180px"
                 objectFit="cover"

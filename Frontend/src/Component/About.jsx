@@ -23,7 +23,7 @@ const About = () => {
         paddingTop={{base:'0px',md:'10px'}}
       >
         <Image 
-          src='/about.webp' 
+          src='images/about.webp' 
           height={{ base: '160px', md: '270px' }} 
           width={{ base: '100%', md: '500px' }} 
           borderRadius={'10px'}

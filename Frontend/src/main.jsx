@@ -9,8 +9,7 @@ createRoot(document.getElementById('root')).render(
     <Provider>
       <Theme appearance='light'>
       <App />
-      </Theme>
-      
+      </Theme>     
     </Provider>
   </StrictMode>,
 )
