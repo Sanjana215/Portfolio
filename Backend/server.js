@@ -11,13 +11,17 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 
-//app.use(express.static(path.join(__dirname,'../Frontend/dist','')))
+const __dirname=path.resolve();
 
 app.use("/",Router)
 
-//app.get('*',(req,res)=>{
- // res.sendFile(path.join(__dirname,"../Frontend/dist/assets/index-CF06BNEb.js"))
-//})
+if(process.env.NODE_ENV=="production"){
+  app.use(express.static(path.join(__dirname,"/Frontend/dist")))
+
+  app.get("*",(req,res)=>{
+         res.sendFile(path.resolve(__dirname,"Frontend","dist","index.html"))
+  })
+}
 
 const PORT= process.env.PORT || 8000
 
