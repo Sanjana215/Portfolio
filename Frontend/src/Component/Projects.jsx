@@ -1,18 +1,18 @@
 import React from 'react'
 import { Box, Heading, Button, Card, Image, Text, SimpleGrid } from "@chakra-ui/react";
 import projects from "../utils/projects.js";
-import { Zoom, Fade, Slide } from "react-awesome-reveal";
+
 
 const Projects = () => {
   return (
     <Box marginTop={'30px'} id="projects">
       
       {/* Zoom in Heading */}
-      <Zoom duration={300}>
+    
         <Heading size={{base:'3xl',md:'4xl'}} textAlign={'center'} color={'#138781'} boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'}>
           Recent Projects
         </Heading>
-      </Zoom>
+      
 
       {/* Description */}
       <Text textAlign={'center'} fontSize="lg" color="gray.800" paddingTop={'30px'}>

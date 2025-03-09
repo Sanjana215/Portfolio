@@ -8,7 +8,7 @@ import { BiSolidContact } from "react-icons/bi";
 import { MdCastForEducation } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 import { Link } from 'react-scroll';
-import { Zoom, Fade } from 'react-awesome-reveal';
+
 import "./Component.css";
 
 const Sidebar = () => {
@@ -27,12 +27,12 @@ const Sidebar = () => {
         
         <VStack className='vstack'>
           {isopen && (
-            <Zoom>
+            
                <Box className='image'>
               <Image src="sanjanaPhoto.jpg" />
             </Box>
 
-             </Zoom>
+            
 
          
            
@@ -41,7 +41,7 @@ const Sidebar = () => {
          
 
           <Box className={!isopen && 'close-menu'}>
-          <Fade direction='left'>
+          
             <HStack padding={2}>
               <Link to="profile" smooth={true} duration={500} activeClass="active" className="nav-link" spy="true"  >
                 <Icon as={RiProfileLine} boxSize={7} color={"blue.400"} title={'profile'} />
@@ -84,7 +84,7 @@ const Sidebar = () => {
               </Link>
             </HStack>
 
-            </Fade>
+           
            
           </Box>
         </VStack>

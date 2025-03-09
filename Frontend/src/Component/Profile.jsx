@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Flex, Heading, Button, VStack } from "@chakra-ui/react";
 import TypeWriterEffect from 'react-typewriter-effect';
-import { Fade } from 'react-awesome-reveal';
+
 
 const Profile = () => {
   return (
@@ -15,7 +15,7 @@ const Profile = () => {
       justifyContent="center"
       alignItems="center"
     >
-      <Fade direction='right'>
+      
         <VStack spacing={4} textAlign="center">
           <Heading size={'3xl'} fontFamily={'monospace'} color={'aliceblue'}>
             Hi👋, I'm a
@@ -43,11 +43,11 @@ const Profile = () => {
             />
           </Box>
         </VStack>
-      </Fade>
+      
 
       {/* Keep buttons fixed */}
       <Box marginTop={'50px'} position="relative">
-        <Fade direction='bottom'>
+       
           <Flex 
             gap={4} 
             flexDirection={{ base: 'column', md: 'row' }}
@@ -80,7 +80,7 @@ const Profile = () => {
               Resume
             </Button>
           </Flex>
-        </Fade>
+        
       </Box>
     </Box>
   );

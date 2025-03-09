@@ -5,7 +5,7 @@ import {
   import { CiLinkedin } from "react-icons/ci";
   import { FaInstagram } from "react-icons/fa";
   import { MdOutlineMail } from "react-icons/md"; 
-  import { Fade } from 'react-awesome-reveal';
+  
   import { toast, ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
   import React from "react";
@@ -73,9 +73,9 @@ import {
           marginBottom={'100px'}
           
         >
-          <Fade delay={100} duration={500}>
+         
           <Heading size={{base:'3xl',md:'4xl'} }textAlign={'center'} color={'#138781'} boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'}>Contact Me</Heading>
-          </Fade>
+         
   
           <HStack spacing={10} align="center" justify="center" flexWrap={{ base: "wrap", md: "nowrap" }}>
             <Image 

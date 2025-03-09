@@ -2,21 +2,21 @@ import React from 'react'
 import { Box, Text, VStack, HStack, Heading, SimpleGrid } from "@chakra-ui/react";
 import techstack from "../utils/techstack.js";
 import { Card } from "@chakra-ui/react";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+
 
 const Skills = () => {
   return (
     <Box paddingTop={'30px'} id="skills">
       
       {/* Faster Zoom for Title */}
-      <Zoom duration={400}>
+      
         <Heading size={{base:'3xl',md:'4xl'}} textAlign={'center'} color={'#138781'} boxShadow={'0px 1px 2px 0px rgba(0, 0, 0, 0.12)'}>
           Technical Skills
         </Heading>
-      </Zoom>
+      
 
       {/* Faster Fade for Description */}
-      <Fade delay={100} duration={500}>
+      
         <Text 
           textAlign={'center'} 
           fontSize="lg" 
@@ -26,7 +26,7 @@ const Skills = () => {
         >
           👉 including programming languages, frameworks, databases, front-end and backend tools.
         </Text>
-      </Fade>
+      
 
       {/* Faster Slide Animation for Skills */}
       <SimpleGrid
@@ -38,7 +38,7 @@ const Skills = () => {
         columns={{base:'2',md:'3'}}
         
       >
-        <Slide direction="up" cascade damping={0.1} duration={600}>
+        
   {techstack.map((ele) => (
     <Card.Root
       key={ele._id}
@@ -87,7 +87,7 @@ const Skills = () => {
       </Heading>
     </Card.Root>
   ))}
-</Slide>
+
 
 
       </SimpleGrid>
