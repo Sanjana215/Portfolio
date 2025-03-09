@@ -37,7 +37,7 @@ import {
       console.log("sending message");
 
       try {
-        const response = await fetch("http://localhost:8000/sendemail", {
+        const response = await fetch("https://portfolio-73jp.onrender.com/sendemail", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formdata)
