@@ -68,8 +68,7 @@ const Profile = () => {
             
             <Button 
               as="a"
-              href="../public/Sanjana_A_2025_VVCE_CV.pdf"
-              download="Sanjana_Resume.pdf"
+              href="https://drive.google.com/file/d/1Qd1k1lDHX83PtE7eWp364rc8wApodYIr/view?usp=drivesdk"
               bg="blue.500"
               color="white"
               width="150px"
